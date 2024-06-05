@@ -52,8 +52,8 @@ src:
   entry: src/entry.md
   img: img
   standing: standing
-  music: music
-  video: video
+  audio: audio
+  custom_script: custom_script
   custom_css: []
 
 game:
@@ -87,16 +87,16 @@ game:
 
 ##### PathConfig
 
-| Name         | Type   | Default | Description           |
-| ------------ | ------ | ------- | --------------------- |
-| *entry*      | String | 必填    | 剧本入口文件路径      |
-| *img*        | String | 必填    | 图片目录路径          |
-| *standing*   | String | 必填    | 立绘目录路径          |
-| *music*      | String | 必填    | 音乐目录路径          |
-| *video*      | String | 必填    | 声音目录路径          |
-| *custom_css* | Vec    | []      | 自定义css文件路径集合 |
+| Name          | Type   | Default | Description           |
+| ------------- | ------ | ------- | --------------------- |
+| *entry*       | String | 必填    | 剧本入口文件路径      |
+| *img*         | String | 必填    | 图片目录路径          |
+| *standing*    | String | 必填    | 立绘目录路径          |
+| *audio*       | String | null    | 声音目录路径          |
+| custom_script | String | null    | 脚本目录路径          |
+| *custom_css*  | Vec    | []      | 自定义css文件路径集合 |
 
-目前`music`，`video`，`custom_css`属性无关紧要
+目前，`audio`，`custom_css`属性无关紧要
 
 ##### GameConfig
 
